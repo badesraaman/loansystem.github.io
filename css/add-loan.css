@@ -1,0 +1,135 @@
+#collapsed {
+	display: none;
+}
+
+#loan {
+	transition: all ease 0.5s;
+}
+
+#tabbed-panel > label {
+	text-transform: uppercase;
+}
+
+#tabbed-panel > input {
+	display: none;
+}
+
+#tabbed-panel > label {
+	cursor: pointer;
+	display: block;
+	float: left;
+	margin-right: 5px;
+	padding: 12px 20px;
+	transition: background-color 0.3s;
+}
+
+#tabbed-panel > label:hover,
+#tabbed-panel > input:checked + label {
+	background-color: var(--dark-purple);
+}
+
+#tabbed-panel > label:hover {
+	color: white;
+}
+
+#tabbed-panel > input:checked + label {
+	color: white;
+	font-weight: bold;
+}
+
+#content-wrapper {
+	clear: both;
+	perspective: 500px;
+	position: relative;
+}
+
+#content-wrapper .tab-content {
+	border: 2px solid var(--dark-purple);
+	left: 0;
+	line-height: 1.4em;
+	opacity: 0;
+	padding: 20px 50px 30px 50px;
+	position: absolute;
+	top: 0;
+	transform-origin: top center;
+	transform: rotateX(-20deg);
+	transition: opacity 0.3s, transform 0.8s;
+	width: 100%;
+	z-index: 0;
+}
+
+#guarantor-tab:checked ~ #content-wrapper >  div:nth-of-type(1),
+#borrower-tab:checked ~ #content-wrapper > div:nth-of-type(2),
+#dealings-tab:checked ~ #content-wrapper > div:nth-of-type(3),
+#submit-tab:checked ~ #content-wrapper > div:nth-of-type(4) {
+	opacity: 1;
+	transform: rotateX(0);
+	z-index: 1;
+}
+
+#new-data-subject {
+	display: none;
+}
+
+#content-wrapper header {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.step-container {
+	background-color: var(--botticelli);
+	border-radius: 35px;
+	list-style: none;
+	overflow: hidden;
+	position: relative;
+}
+
+.step-container::after {
+	background: var(--eden);
+	border-radius: 35px;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 5ch;
+}
+
+.step-item {
+	color: var(--chambray);
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1;
+	padding: 11px 0;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	z-index: 5;
+}
+
+.step-item.number {
+	color: #fff;
+	padding: 11px 0 11px 20px;
+}
+
+.step-item.description {
+	padding: 11px 20px 11px 15px;
+}
+
+#new-data-subject hr {
+	margin: 15px 0 0 0;
+}
+
+#principal {
+	width: 20ch;
+}
+
+#dealings-content label:not(:first-of-type) {
+	margin-top: 25px;
+}
+
+#collateral {
+	width: 50ch;
+}

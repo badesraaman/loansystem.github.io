@@ -1,0 +1,37 @@
+<form action="src/edit-data-subject.php" method="post">
+	<div class="grid-wrapper">
+		<header class="modal">Edit Data Subject</header>
+		<div class="grid-item">
+			<label for="fname">First Name</label>
+			<input id="fname" type="text" name="fname" required />
+		</div><!-- .grid-item -->
+		<div class="grid-item">
+			<label for="mname">Middle Name</label>
+			<input id="mname" type="text" name="mname" required />
+		</div><!-- .grid-item -->
+		<div class="grid-item">
+			<label for="lname">Last Name</label>
+			<input id="lname" type="text" name="lname" required />
+		</div><!-- .grid-item -->
+		<div class="grid-item">
+			<label for="contact-no">Contact No. (09*********)</label>
+			<input id="contact-no" type="text" name="contact-no" pattern="^09[0-9]{9}" class="small" required />
+		</div><!-- .grid-item -->
+		<div class="grid-item">
+			<label for="bday">Birthday</label>
+			<input id="bday" type="date" name="bday" required class="medium" />
+		</div><!-- .grid-item -->
+		<div class="grid-item">
+			<label for="">Phase, Block, and Lot</label>
+			<input id="address" type="text" name="address" required class="medium" />
+		</div><!-- .grid-item -->
+	</div><!-- .grid-wrapper -->
+	<input id="id" type="hidden" name="id" required class="short" readonly />
+
+	<footer>
+		<p>
+			By clicking this button, you agree to our <a href="agreement.php" target="_blank"><b>Terms</b> and that you have read our <b>Data Use Policy</b>, including our <b>Cookie Use</b></a>.
+		</p>
+		<button id="modal-ok" type="submit" name="edit"><i class="fas fa-pencil-alt"></i></button>
+	</footer>
+</form>

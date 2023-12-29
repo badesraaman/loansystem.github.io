@@ -1,0 +1,40 @@
+<form action="src/add-new-guarantor.php" method="post" novalidate>
+	<div class="grid-wrapper">
+		<header class="modal">New Guarantor</header>
+		<div class="grid-item">
+			<label for="fname">First Name</label>
+			<input id="fname" type="text" name="fname" required />
+		</div><!-- .grid-item -->
+		<div class="grid-item">
+			<label for="mname">Middle Name</label>
+			<input id="mname" type="text" name="mname" required />
+		</div><!-- .grid-item -->
+		<div class="grid-item">
+			<label for="lname">Last Name</label>
+			<input id="lname" type="text" name="lname" required />
+		</div><!-- .grid-item -->
+		<div class="grid-item">
+			<label for="contact-no">Contact No. (09*********)</label>
+			<input id="contact-no" type="text" name="contact-no" pattern="^09[0-9]{9}" required />
+		</div><!-- .grid-item -->
+		<div class="grid-item">
+			<label for="bday">Birthday</label>
+			<input id="bday" type="date" name="bday" required class="medium" />
+		</div><!-- .grid-item -->
+		<div class="grid-item">
+			<label for="">Phase, Block, and Lot</label>
+			<input id="address" type="text" name="address" required class="medium" />
+		</div><!-- .grid-item -->
+		<div class="grid-item">
+			<label for="">No. of Share</label>
+			<input type="number" name="number-of-share" required class="number-of-share short" min="1" max="5" />
+		</div><!-- .grid-item -->
+	</div><!-- .grid-wrapper -->
+
+	<footer>
+		<p>
+			By clicking this button, you agree to our <a href="agreement.php" target="_blank"><b>Terms</b> and that you have read our <b>Data Use Policy</b>, including our <b>Cookie Use</b></a>.
+		</p>
+		<button id="modal-ok" type="submit" name="add"><i class="fas fa-plus"></i></button>
+	</footer>
+</form>

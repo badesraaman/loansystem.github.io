@@ -1,0 +1,149 @@
+/*@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");*/
+
+:root {
+	--alizarin-crimson: #E61D1D;
+	--athens-gray: #e8e9eb;
+	--azureish-white: #dae8f5;
+	--blue-chill: #0d8b90;
+	--botticelli: #d4e1ee;
+	--chambray: #345f90;
+	--cyan: #03b8c0;
+	--dark-purple: #1d1b31;
+	--eden: #0d3b4c;
+	--light-gray: #d3d3d3;
+	--light-steel-blue: #a9bcd0;
+	--link-water: #e4e9f7;
+	--mine-shaft: #333232;
+	--persian-red: #d33333;
+	--roman-silver: #787e87;
+	--silver-sand: #c5c6c8;
+	--turquoise: #39d1b4;
+	--xiketic: #11101d;
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+main {
+	background: var(--link-water);
+	left: 280px;
+	min-height: 100vh;
+	padding-bottom: 30px;
+	position: relative;
+	transition: all 0.5s ease;
+	width: calc(100% - 280px);
+}
+
+main header {
+	align-items: center;
+	color: var(--xiketic);
+	display: flex;
+	font-size: 35px;
+	height: 60px;
+	overflow: hidden;
+}
+
+main header .fa-bars {
+	cursor: pointer;
+	margin: 0 15px;
+}
+
+h2 {
+	font-size: 26px;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 24px;
+	margin: 10px 0;
+}
+
+h4 {
+	font-size: 22px;
+	margin: 10px 0 20px 0;
+	color: var(--eden);
+}
+
+hr {
+	margin-bottom: 15px;
+}
+
+.center-ball-container {
+	width: 100%;
+	height: 100%;
+	margin: 30px 0;
+	position: relative;
+}
+
+hr.center-ball {
+	background-color: var(--turquoise);
+	margin: 0 10vw;
+}
+
+hr.center-ball::before {
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background-color: var(--turquoise);
+	border-radius: 50%;
+	border: 2px solid var(--turquoise);
+	content: "";
+	display: inline-block;
+	height: 6px;
+	left: 50%;
+	margin: 0 0 0 -3px;
+	position: absolute;
+	top: -4px;
+	width: 6px;
+}
+
+section {
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+	margin: 30px 60px;
+	padding: 20px 50px 40px 50px;
+}
+
+.divider {
+	margin: 20px 0 30px 0;
+}
+
+div[id$="-holder"] {
+	display: none;
+}
+
+p.agreement {
+	margin-bottom: 15px;
+}
+
+.focal-button {
+	background-color: var(--blue-chill);
+	border-radius: 5px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 500;
+	outline: none;
+	padding: 10px 25px;
+}
+
+.focal-button:hover {
+	background-color: var(--cyan);
+}
+
+.pattern-bg {
+	background-image: linear-gradient(90deg, rgba(165, 165, 165, 0.03) 0%, rgba(165, 165, 165, 0.03) 8%,rgba(235, 235, 235, 0.03) 8%, rgba(235, 235, 235, 0.03) 9%,rgba(7, 7, 7, 0.03) 9%, rgba(7, 7, 7, 0.03) 14%,rgba(212, 212, 212, 0.03) 14%, rgba(212, 212, 212, 0.03) 17%,rgba(219, 219, 219, 0.03) 17%, rgba(219, 219, 219, 0.03) 95%,rgba(86, 86, 86, 0.03) 95%, rgba(86, 86, 86, 0.03) 100%),linear-gradient(67.5deg, rgba(80, 80, 80, 0.03) 0%, rgba(80, 80, 80, 0.03) 11%,rgba(138, 138, 138, 0.03) 11%, rgba(138, 138, 138, 0.03) 17%,rgba(122, 122, 122, 0.03) 17%, rgba(122, 122, 122, 0.03) 24%,rgba(166, 166, 166, 0.03) 24%, rgba(166, 166, 166, 0.03) 27%,rgba(245, 245, 245, 0.03) 27%, rgba(245, 245, 245, 0.03) 89%,rgba(88, 88, 88, 0.03) 89%, rgba(88, 88, 88, 0.03) 100%),linear-gradient(67.5deg, rgba(244, 244, 244, 0.03) 0%, rgba(244, 244, 244, 0.03) 4%,rgba(16, 16, 16, 0.03) 4%, rgba(16, 16, 16, 0.03) 10%,rgba(157, 157, 157, 0.03) 10%, rgba(157, 157, 157, 0.03) 20%,rgba(212, 212, 212, 0.03) 20%, rgba(212, 212, 212, 0.03) 83%,rgba(5, 5, 5, 0.03) 83%, rgba(5, 5, 5, 0.03) 84%,rgba(237, 237, 237, 0.03) 84%, rgba(237, 237, 237, 0.03) 100%),linear-gradient(90deg, #ffffff, #ffffff);
+	border-bottom: 1px solid var(--blue-chill);
+	border-radius: 15px;
+	border-top: 1px solid var(--blue-chill);
+	width: 100%;
+}

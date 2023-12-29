@@ -1,0 +1,153 @@
+table {
+	padding-top: 20px;
+	text-align: center;
+}
+
+table thead th {
+	background-color: var(--light-steel-blue);
+	font-family: "Poppins Regular", sans-serif;
+}
+
+table thead th:first-child {
+	border-radius: 5px 0 0 0;
+}
+
+table thead th:last-child {
+	border-radius: 0 5px 0 0;
+}
+
+table .fa-user-edit,
+table .fa-plus-square,
+table .fa-eye,
+table .fa-door-open,
+table .fa-door-closed {
+	color: var(--blue-chill);
+	text-decoration: none;
+}
+
+table .fa-minus-square {
+	color: var(--persian-red);
+}
+
+table .fa-times-circle {
+	color: var(--mine-shaft);
+}
+
+table .fa-user-edit:hover,
+table .fa-plus-square:hover,
+table .fa-eye:hover,
+table .fa-door-open:hover,
+table .fa-door-closed:hover {
+	color: var(--cyan) !important;
+}
+
+table .fa-minus-square:hover {
+	color: var(--alizarin-crimson);
+}
+
+.dataTables_filter input {
+	display: inline-block;
+	margin-left: 5px;
+	width: 200px;
+}
+
+table td a,
+#public-loans table a:hover {
+	color: var(--persian-red);
+}
+
+table td a:hover {
+	color: #ff0000;
+}
+
+#public-loans table a {
+	cursor: text;
+}
+
+table td a.claimed {
+	color: var(--blue-chill);
+}
+
+table td a.claimed:hover {
+	color: var(--cyan);
+}
+
+table.display.dataTable tbody tr:hover,
+table.display.dataTable tbody tr:hover > .sorting_1 {
+	background-color: var(--botticelli);
+}
+
+table .fas:not(.fa-times-circle), .far,
+#new-guarantor table tr:hover {
+	cursor: pointer;
+}
+
+#print-header {
+	display: flex;
+	gap: 20px;
+}
+
+#print-header h1 {
+	font-size: 25px;
+	line-height: 1.2;
+}
+
+#print-header .fa-handshake {
+	font-size: 100px;
+}
+
+#print-header address {
+	line-height: 1.4;
+}
+
+.print-hr {
+	margin: 10px 0;
+}
+
+th span {
+	font-weight: normal;
+}
+
+section .pattern-bg th {
+	color: var(--eden);
+}
+
+p.pattern-bg {
+	border-radius: 10px;
+	margin: 20px auto 0 auto;
+	padding: 10px;
+	text-align: center;
+	width: 30%;
+}
+
+.peso-sign {
+	color: var(--roman-silver);
+	font-size: 18px;
+}
+
+.amount {
+	font-family: "Consolas", serif;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+table.pattern-bg tr:last-child th,
+table.pattern-bg tr:last-child td {
+	padding-bottom: 20px;
+}
+
+table.pattern-bg th {
+	text-align: right;
+}
+
+table.pattern-bg td {
+	text-align: justify;
+}
+
+table.pattern-bg th, table.pattern-bg td {
+	padding: 2px 5px;
+}
+
+.tingle-modal-box table.pattern-bg td {
+	padding-right: 30px;
+}

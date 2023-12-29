@@ -1,0 +1,205 @@
+input:disabled,
+input:read-only,
+.readonly {
+	color: #434343;
+}
+
+.tingle-modal--overflow {
+	padding-bottom: 8vh;
+}
+
+.container .grid-wrapper,
+form .grid-wrapper {
+	display: grid;
+	grid-gap: 15px 30px;
+	grid-template-columns: 1fr 1fr;
+	margin: 48px 48px 32px 48px;
+}
+
+.container .grid-wrapper h2 {
+	text-align: center;
+	margin: 0;
+}
+
+.container .grid-wrapper img {
+	border-radius: 15px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto 20px auto;
+	display: block;
+}
+
+.personal-details .grid-wrapper,
+.account-details .grid-wrapper {
+	margin: 0 20px;
+}
+
+section form .grid-wrapper {
+	margin: 0;
+}
+
+.container .grid-wrapper .solo,
+form .grid-wrapper .solo {
+	grid-column: 1/-1;
+}
+
+header.modal {
+	background-color: var(--light-steel-blue);
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	grid-column: 1/-1;
+	margin-bottom: 10px;
+	padding: 15px;
+	text-align: center;
+	text-shadow: 1px 1px 2px #000;
+}
+
+.container header.modal {
+	margin-bottom: 0;
+}
+
+form label {
+	display: block;
+	white-space: nowrap;
+}
+
+input,
+select,
+textarea {
+	border-radius: 5px;
+	border: 1px solid var(--light-gray);
+	border-bottom-width: 2px; /* Should always be after border property. */
+	font-size: 17px;
+	height: 38px;
+	outline: none;
+	padding: 0 15px;
+	transition: all 0.3s ease;
+	width: 100%;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+	border-color: var(--blue-chill);
+}
+
+input[type="file"] {
+	padding-top: 5px;
+}
+
+select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	background-image: url("../img/others/down-arrow.svg");
+	background-position: right 15px center;
+	background-repeat: no-repeat;
+	background-size: 24px 24px;
+	padding: 0 45px 0 15px;
+}
+
+textarea {
+	height: 85px;
+	padding: 7px 15px;
+	resize: none;
+	text-align: justify;
+}
+
+.medium {
+	width: 90%;
+}
+
+.small {
+	width: 16ch;
+}
+
+.short {
+	width: 50%;
+}
+
+footer {
+	margin-top: 20px;
+}
+
+.tingle-modal footer {
+	align-items: center;
+	background-color: var(--athens-gray);
+	border-top: 2px solid var(--silver-sand);
+	display: flex;
+	gap: 18%;
+	justify-content: flex-end;
+	padding: 10px 48px 14px 48px;
+}
+
+.tingle-modal footer button {
+	background: none;
+	border: none;
+}
+
+.tingle-modal form i.fas {
+	background-color: var(--blue-chill);
+	border-radius: 50%;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	color: white;
+	font-size: 2rem;
+	margin: 3px;
+	padding: 17px 20px;
+	position: relative;
+	transition: color 0.2s ease, background-color 0.2s ease, transform 0.5s ease;
+}
+
+.tingle-modal form i.fas::after {
+	border-radius: 50%;
+	border: solid 2px;
+	content: "";
+	height: 100%;
+	left: -2px;
+	position: absolute;
+	top: -2px;
+	transform: scale(0.8);
+	transition: all 0.3s ease;
+	width: 100%;
+}
+
+.tingle-modal form i.fas:hover::after {
+	box-shadow: 10px 0 20px rgba(0, 0, 0, 0.19), 6px 0 6px rgba(0, 0, 0, 0.23);
+	transform: scale(1);
+}
+
+.tingle-modal form i.fas:hover {
+	background-color: transparent;
+	box-shadow: none;
+	color: var(--blue-chill);
+	cursor: pointer;
+	transform: rotate(90deg);
+}
+
+.info {
+	padding: 30px;
+}
+
+.fa-question-circle {
+	color: var(--blue-chill);
+	display: inline-block;
+	margin-left: 3px;
+}
+
+.flex-wrapper + button[type="submit"] {
+	display: none;
+}
+
+input[id*="show-password"],
+input[id*="show-password"] + label {
+	display: inline-block;
+	vertical-align: middle;
+	width: unset;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+	display: none;
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 30px #fff inset;
+}
